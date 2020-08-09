@@ -1,0 +1,41 @@
+<%- include('partials/header') %> 
+<!-- this is how to we do partial templating using ejs and express latest version -->
+<body>
+
+    <div class="container">
+        <%- include('partials/navBar') %>
+        <!-- Another partail templating -->
+        <div class="main">
+            <div class="top">
+                <h2>This is my first Node JS project</h2>
+                <p><strong>Do not mind the design as it is a backend project</strong></p>
+            </div>
+            <div class="middle">
+                <h4>They are in different fragments but you don't know</h4>
+                <h5><p>They don't</p></h5>
+            </div>
+            <div>
+                <section>
+                    <div class="note">
+                        <p>
+                            I am using Express as a depenndancy in Node, I used the Node package manager (NPM) to install so many dependency which will
+                            be so useful in writing Node JS application.
+                        </p>
+                        <p>
+                            NPM init is a command that will will initialize the 'package.json' file where all the information about the project will be saved
+                        </p>
+                        <p>
+                            Nodemon is a very important library that will help us restart the server, it is installed by running the command "npm install nodemon -g -save"
+                        </p>
+                        <p>EJS is our view engine "npm install ejs -save" </p>
+                        <p>I learnt about static files as well and how to render them</p>
+                        <p>We use built in express function called "express.static" </p>
+                    </div>
+                    <div>
+                        <h5>Note this is a NODE Javascript project and not a CSS and design project</h5>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/footer') %>

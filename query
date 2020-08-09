@@ -1,0 +1,78 @@
+
+
+
+
+
+//insert post
+// app.get('/registeruser', (req, res) => {
+//     let data = {firstname: 'Joshua', lastname: 'Uzor', email: 'Joshuauzor10@gmail.com'};
+//     let sql = 'INSERT INTO users SET ?';
+//     let query = db.query(sql, data, (err, result) => {
+//         if(err){
+//             throw err
+//         };
+
+//         console.log(result);
+//     })
+// });
+
+// //insert ends
+
+// //select all data
+// app.get('/getdata', (req, res) => {
+//     let sql = 'SELECT * FROM users'
+//     let query = db.query(sql, (err, results) => {
+//         if(err){
+//             throw err
+//         };
+
+//         console.log(results);
+//     })
+// });
+
+// //select ends
+
+// //select one data
+// app.get('/getone/:id', (req, res) => {
+//     let sql = `SELECT * FROM users WHERE id = ${req.params.id}`; //backquote because of the data 
+//     let query = db.query(sql, (err, results) => {
+//         if(err){
+//             throw err
+//         };
+
+//         console.log(results);
+//     })
+// });
+// //ends 
+
+// //update data
+// app.get('/update/:id', (req, res) => {
+//     let data = 'dinmar';
+//     let sql = `UPDATE users SET firstname = '${data}' WHERE id = ${req.params.id}`; //backquote because of the data 
+//     let query = db.query(sql, (err, results) => {
+//         if(err){
+//             throw err
+//         };
+
+//         console.log(results);
+//     })
+// });
+// //update ends
+
+// //delete post
+// app.get('/delete/:id', (req, res) => {
+//     let sql = `DELETE FROM users WHERE id = ${req.params.id}`; //backquote because of the data 
+//     let query = db.query(sql, (err, results) => {
+//         if(err){
+//             throw err
+//         };
+
+//         console.log(results);
+//     })
+// });
+// //delete post
+
+// //delete post ends here
+
+
+

@@ -1,0 +1,57 @@
+<%- include('partials/header') %> 
+<!-- this is how to we do partial templating using ejs and express latest version -->
+<body>
+
+    <div class="container">
+        <%- include('partials/navBar') %>
+        <!-- Another partail templating -->
+    <div class="main">
+        <div class="signin">
+            <form action="/login" method="POST">
+                <% if(message) {%>
+                <h3 style="background-color: red;"><%= message %></h3>
+                <% } %>
+                <div>
+                    Email: <input type="email" name="email" required>
+                </div>
+                  <div id="flex"> 
+                    <div class='flex-child'>
+                        Password: <input type="password" name="password" id="pwd">                                           
+                            <img src="/assets/images/password.png" alt="" id="img">
+                    </div>
+                  </div>
+               <div class="submit">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+        <div class="account"><a href="register" style="color: #000;">Don't have an account? register</a></div>
+    </div>
+    <script>
+        // $('#img').on('click', function(){
+        //     if('password' == $('#pwd').attr('type')){
+        //         $('#pwd').attr('type', 'text');
+        //     }else{
+        //         $('#pwd').attr('type', 'password');
+        //     }
+        // });
+
+        $('#img').on('mousedown', function(){
+            if('password' == $('#pwd').attr('type')){
+                $('#pwd').attr('type', 'text');
+            }else{
+                $('#pwd').attr('type', 'password');
+            }
+        });
+        //reverse of mousedown
+        $('#img').on('mouseup', function(){
+            if('password' == $('#pwd').attr('type')){
+                $('#pwd').attr('type', 'text');
+            }else{
+                $('#pwd').attr('type', 'password');
+            }
+        });
+    
+    </script>
+
+<%- include('partials/footer') %>
